@@ -14,7 +14,44 @@
 </head>
 <body>
     <header>
+        <nav class="ttnav navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: 100%;">
+            <div class="container-fluid">
+              <img src="img/img_EG_logo.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item me-5">
+                    <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown me-5">
+                    <a class="nav-link dropdown-toggle" href="programme.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nos Programme
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="programme.html">Business & Energy School</a></li>
+                      <li><a class="dropdown-item" href="programme.html">Business & HeathCare School</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="programme.html">Business & Agri School</a></li>
+                    </ul>
+                  </li>
+                  
 
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="energyspace.html" aria-current="page"> Energy Space</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="blog.html" aria-current="page"> Blog</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="mentor.html" aria-current="page">Devenir Benevol</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -78,7 +115,7 @@ Notre programme unique, basé sur la théorie du Design Thinking du MIT, va te p
 
                     </div>
                     <div class="col-md">
-                        <img src="/media/Innovation_technologies.min.svg" class="img-fluid" alt="">
+                        <img src="media/Innovation_technologies.min.svg" class="img-fluid" alt="">
                     </div>
 
                 </div>
@@ -87,7 +124,7 @@ Notre programme unique, basé sur la théorie du Design Thinking du MIT, va te p
             <div class="container" style="background-color:white ;border-radius: 10px; border: 2px solid #469edd;" >
                 <div class="row align-items-center justify-content-between m-3">
                     <div class="col-md">
-                        <img src="/media/thinkspace-customer-driven-innovation.svg" class="img-fluid" alt="">
+                        <img src="media/thinkspace-customer-driven-innovation.svg" class="img-fluid" alt="">
                     </div>
                    
                     <div class="col-md p-2">
@@ -193,7 +230,7 @@ Passionnés par la problématique de la tradition énergétique en Afrique, l'en
 
                     </div>
                     <div class="col-md">
-                        <img src="/media/lv_fundamentals.svg" class="img-fluid" alt="">
+                        <img src="media/lv_fundamentals.svg" class="img-fluid" alt="">
                     </div>
 
                 </div>
@@ -211,7 +248,7 @@ Passionnés par la problématique de la tradition énergétique en Afrique, l'en
                 </div>
                 <div class="row my-5 g-5 justify-content-around align-items-center">
                     <div class="col-6 col-lg-4">
-                        <img src="/media/illu-header-recrutement.svg" class="img-fluid" alt="inscription">
+                        <img src="media/illu-header-recrutement.svg" class="img-fluid" alt="inscription">
                     </div>
                     <!--DEBUT DU MODULE ACCORDION-->
                     <div class="col-lg-6"> 
@@ -297,85 +334,85 @@ Passionnés par la problématique de la tradition énergétique en Afrique, l'en
 
         <section id="inscriptionform">
             <div class="container mb-5 col-8">
-                <form class="p-5" style="box-shadow: 0px 15px 50px rgba(0, 0, 0, .2);border-radius: 10px;">
+                <form class="p-5" action="registration.php" method="POST" style="box-shadow: 0px 15px 50px rgba(0, 0, 0, .2);border-radius: 10px;">
                     
                       <legend class="fw-2 col-6 p-1" style="color:#EFB34F; text-align: center ;border-radius: 5px;background-color: #262d80;font-size: 30px;">Postulez Maintenant</legend>
                       <div class="mb-3">
                         <label for="disabledTextInput" class="form-label">Nom<span style="color: red;">*</span></label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Nom">
+                        <input type="text" id="disabledTextInput" class="form-control" name="nom" placeholder="Nom">
                       </div>
                       
                       <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Genre<span style="color: red;">*</span></label>
-                        <select id="disabledSelect" class="form-select">
+                        <select id="disabledSelect"  name="genre"   class="form-select">
                           <option>Veillez selectionner</option>
-                          <option>Masculin</option>
-                          <option>Feminin</option>
+                          <option value="masculin">Masculin</option>
+                          <option value="feminin">Feminin</option>
                         </select>
                       </div>
 
                       <div class="mb-3">
                         <label for="disabledTextInput" class="form-label">Email<span style="color: red;">*</span></label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="example@gmail.com">
+                        <input type="text" id="disabledTextInput" class="form-control" name="email" placeholder="example@gmail.com">
                       </div>
 
                       <div class="mb-3">
                         <label for="disabledTextInput" class="form-label">Confirmer votre email<span style="color: red;">*</span></label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="example@gmail.com">
+                        <input type="text" id="disabledTextInput" class="form-control" name="email_con" placeholder="example@gmail.com">
                       </div>
                       
                       <div class="mb-3">
                         <label for="disabledTextInput" class="form-label">Numéros de teléphone(avec indicatif)<span style="color: red;">*</span></label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="(+228) 91 08 97 81">
+                        <input type="text" id="disabledTextInput" class="form-control" name="numero" placeholder="(+228) 91 08 97 81">
                       </div>
 
                       <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Pays<span style="color: red;">*</span></label>
-                        <select id="disabledSelect" class="form-select">
-                          <option></option>
-                          <option>Togo</option>
-                          <option>Ghana</option>
-                          <option>Gabon</option>
-                          <option>Benin</option>
-                          <option>Cote d'ivoir</option>
-                          <option>Congo</option>
-                          <option>Mali</option>
-                          <option>Burkina faso</option>
-                          <option>Niger</option>
-                          <option>Nigeria</option>
-                          <option>Cameroune</option>
+                        <select id="disabledSelect" name="pays" class="form-select">
+                          <option ></option>
+                          <option value="togo">Togo</option>
+                          <option value="ghana">Ghana</option>
+                          <option value="gabon">Gabon</option>
+                          <option value="benin">Benin</option>
+                          <option value="cote d'ivoire">Cote d'ivoir</option>
+                          <option value="congo">Congo</option>
+                          <option value="mali">Mali</option>
+                          <option value="burkina faso">Burkina faso</option>
+                          <option value="niger">Niger</option>
+                          <option value="nigeria">Nigeria</option>
+                          <option value="cameroune">Cameroune</option>
                         </select>
                       </div>
 
                       <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Niveau d'étude<span style="color: red;">*</span></label>
-                        <select id="disabledSelect" class="form-select">
+                        <select id="disabledSelect" name="diplome" class="form-select">
                           <option></option>
-                          <option>Aucun diplôme superieur</option>
-                          <option>Bac</option>
-                          <option>Bac+2</option>
-                          <option>Bac+3</option>
-                          <option>Bac+4/5</option>
-                          <option>Doctorat</option>
+                          <option value="aucun">Aucun diplôme superieur</option>
+                          <option value="bac">Bac</option>
+                          <option value="bac+2">Bac+2</option>
+                          <option value="bac+3">Bac+3</option>
+                          <option value="bac+4/5">Bac+4/5</option>
+                          <option value="doctorat">Doctorat</option>
                         </select>
                       </div>
 
                       <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Thématique<span style="color: red;">*</span></label>
-                        <select id="disabledSelect" class="form-select">
+                        <select id="disabledSelect" name="thematique" class="form-select">
                           <option></option>
-                          <option>Energy</option>
-                          <option>Agri-business</option>
-                          <option>Santé & Bien-être</option>
+                          <option value="energy">Energy</option>
+                          <option value="agri-business">Agri-business</option>
+                          <option value="santé & bien-être">Santé & Bien-être</option>
                         </select>
                       </div>
 
                       <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Campus préferé<span style="color: red;">*</span></label>
-                        <select id="disabledSelect" class="form-select">
+                        <select id="disabledSelect" name="campus" class="form-select">
                           <option></option>
-                          <option>Campus francophone - Lomé</option>
-                          <option>Campus anglophone - Accra</option>
+                          <option value="campus francophone-lomé">Campus francophone - Lomé</option>
+                          <option value="campus anglophone-ghana">Campus anglophone - Accra</option>
                         </select>
                       </div>
                       <button type="submit" class="btn btn-primary">Envoyer</button>
@@ -609,9 +646,110 @@ Passionnés par la problématique de la tradition énergétique en Afrique, l'en
         </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer class="bg-primary text-dark mt-3 pt-5 pb-4">
+        <div class="container text-center text-md-left">
+         <div class="row text-center text-md-left">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto-mt-3">
+                 <h5 class=" text-uppercase mb-4 font-weight-bold text-warning">Company Name</h5>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                     
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark" style="text-decoration: none;">The providers</a>
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                     
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark" style="text-decoration: none;">The providers</a>
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning ">Useful Links</h5>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+                 <p>
+                     <a href="#" class="text-dark " style="text-decoration: none;">The providers</a>
+                 </p>
+ 
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning ">Contact</h5>
+                 <p>
+                     <i class="fas fa-home mr-3 ">  </i> New York,NY 2333, US
+                 </p>
+                 <p>
+                     <i class="fas fa-home mr-3 ">  </i> New York,NY 2333, US
+                 </p>
+                 <p>
+                     <i class="fas fa-home mr-3 ">  </i> New York,NY 2333, US
+                 </p>
+                 <p>
+                     <i class="fas fa-home mr-3 ">  </i> New York,NY 2333, US
+                 </p>
+              </div>
+              <hr class="mb-4">
+              <div class="row align-items-center">
+ 
+                 <div class="col-md-7  col-lg-8 ">
+                     <p>Copyright @2020 All rights reseverd by:
+                         <a href="#" style="text-decoration: none;">
+                             <strong class="text-warning">The Providers</strong>
+                         </a>
+                     </p>
+ 
+                 </div>
+                 <div class="col-md-5 col-lg-4">
+                     <div class="text-center text-md-right">
+                         <ul class="list-unstyled list-inline ">
+                             <li class="list-inline-item">
+                                     <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"> <i class="fab fa-facebook"></i></a>
+                             </li>
+                             <li class="list-inline-item">
+                                 <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"> <i class="fab fa-twitter"></i></a>
+                             </li>
+                             <li class="list-inline-item">
+                                 <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"> <i class="fab fa-google-plus"></i></a>
+                             </li>
+                             <li class="list-inline-item">
+                                 <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"> <i class="fab fa-linkedin-in"></i></a>
+                             </li>
+                             <li class="list-inline-item">
+                                 <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"> <i class="fab fa-youtube"></i></a>
+                             </li>
+ 
+                         </ul>
+                     </div>
+                 </div>
+ 
+              </div>
+         </div>
+        </div>
+     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

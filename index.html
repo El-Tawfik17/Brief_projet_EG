@@ -12,13 +12,24 @@
             margin-top: 40px;
             
         }
+        .first_section{
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , center/cover no-repeat url(img/img_EG_picture.jpg)  ;
+          /* width: 800px; */
+          height: 500px;
+
+          
+        }
+        .ttnav{
+            position: fixed;
+            width: 100%;
+        }
     </style>
     <title>Acceuil</title>
 </head>
 <body class="bg-light">
     <!-- Header of site -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="ttnav navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <img src="img/img_EG_logo.png" alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,30 +38,30 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item me-5">
-                    <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
                   </li>
                   
                   <li class="nav-item dropdown me-5">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="programme.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Nos Programme
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Business & Energy School</a></li>
-                      <li><a class="dropdown-item" href="#">Business & HeathCare School</a></li>
+                      <li><a class="dropdown-item" href="programme.html">Business & Energy School</a></li>
+                      <li><a class="dropdown-item" href="programme.html">Business & HeathCare School</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Business & Agri School</a></li>
+                      <li><a class="dropdown-item" href="programme.html">Business & Agri School</a></li>
                     </ul>
                   </li>
                   
 
                   <li class="nav-item me-5">
-                    <a class="nav-link" href="#" aria-current="page"> Energy Space</a>
+                    <a class="nav-link" href="energyspace.html" aria-current="page"> Energy Space</a>
                   </li>
                   <li class="nav-item me-4">
-                    <a class="nav-link" href="#" aria-current="page"> Blog</a>
+                    <a class="nav-link" href="blog.html" aria-current="page"> Blog</a>
                   </li>
                   <li class="nav-item me-4">
-                    <a class="nav-link" href="#" aria-current="page">Devenir Benevol</a>
+                    <a class="nav-link" href="mentor.html" aria-current="page">Devenir Benevol</a>
                   </li>
                 </ul>
               </div>
@@ -59,24 +70,15 @@
     </header>
     <!-- first section -->
 
-    <section class="first_section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 -lg-center">
-                   <div class="header_comment d-flex  flex-wrap">
-                    <span class="fs-1 fw-1 text-primary w-100  ">Maitre De La</span> <span  class="fs-1 fw-1 w-100"> Coherance Et De La</span> <span class="fs-1 fw-1 text-primary w-100"> La Qualité</span>
-                   </div>
-                   <div class="cont-bt my-2">
-                    <a href="#" class="rounded btn btn-primary ms-5"> Nous Contacter</a>
-                   </div>
-                    
+    <section class="first_section pt-5">
+            <div class="container text-center">
+                <div class="mt-3">
+                    <h1 class="text-light fs-1 font-weight-bold ">Donnez vie à votre avenir avec Energy Generation</h1>
+                 <p class="text-light ">Energy Generation vise à soutenir et à promouvoir les innovations technologiques et entrepreneuriales afin d'identifier, de développer et de diffuser largement les solutions pratiques « made in Africa ».</p>
+                 <button type="button" class="btn btn-primary">vister notre Blog</button> <button type="button" class="btn btn-warning">Nos programme</button>
                 </div>
-                <div class="col-lg-8">
-                    <img src="img/img_EG_picture.jpg" class="img-fluid" alt="">
-                </div>
+                 
             </div>
-        </div>
-
     </section>
     <!-- second section -->
     <section>
@@ -188,11 +190,7 @@ Quel que soit votre niveau d'études actuel, la Formation Entrepreneuriat Solair
                     <img src="img/solaire_img2.jpg" class="img-fluid d-inline-block mt-5" alt="">
                 </div>
             </div>
-            <div class="row bg-dark rounded w-77">
-                <div class="col-4"><h1 class="text-light">Business & Energy School</h1></div>
-                <div class="col-4"> <h1 class="text-light">Business & HealthCare School</h1></div>
-                <div class="col-4"><h1 class="text-light">Business & Agri School</h1></div>
-            </div>
+             
             <div class="row mt-3">
                 <div class="container">
                     <div class="row text-center g-4">
