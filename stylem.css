@@ -12,7 +12,7 @@
 .imageprinci{
 height: 100vh;
 width: 100%;
-background-image:linear-gradient(135deg, var(--primary) ,var(--secondary)), url(/media/mentorimg.webp);
+background-image:linear-gradient(135deg, var(--primary) ,var(--secondary)), url(media/mentorimg.webp);
 background-size: cover;
 background-position: center;
 }
@@ -64,7 +64,7 @@ color: #262d80;
 .cercle{
     width: 200px;
     height: 200px;
-    background-image: url(/media/imgg.webp);
+    background-image: url(media/imgg.webp);
     background-size: cover;
     border-radius: 50%;
     float: left;
@@ -74,7 +74,7 @@ color: #262d80;
 .cercle2{
     width: 200px;
     height: 200px;
-    background-image: url(/media/imgl.webp);
+    background-image: url(media/imgl.webp);
     background-size: cover;
     border-radius: 50%;
     float: left;
