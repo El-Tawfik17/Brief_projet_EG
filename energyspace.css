@@ -177,7 +177,7 @@ body {
 }
 
 .believer_title {
-    color: #1E2985;
+    color: #262d80;
     font-family:'Poppins',sans-serif ;
     font-weight: 700;
     font-size:4vw;
@@ -185,10 +185,13 @@ body {
     margin-bottom: 2vh;
 }
 .talk_title1{
-    color: #FAB02E;
+    color: #efb34f;
     font-family:'Poppins',sans-serif ;
     font-weight: 700;
     font-size:4vw;
 	text-align:center;
     margin-bottom: 2vh;
+}
+footer .container .row a{
+    color: white;
 }
