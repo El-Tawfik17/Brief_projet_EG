@@ -1,8 +1,8 @@
 <?php
-$host="localhost";
-$dbname="energygeneration";
-$username="root";
-$password="";
+$host="ftp-energystat.alwaysdata.net";
+$dbname="energystat_base";
+$username="274480_stat";
+$password="fikmen25@17";
 $conn=mysqli_connect(   hostname:$host,
                   username:$username,
                   password:$password,
