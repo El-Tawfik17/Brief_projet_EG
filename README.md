@@ -6,7 +6,7 @@ Sur une base de *collaboration* entre Dev Web, Energy generation nous demande de
 ## Situation de départ :
 - [Lien du site Web] (https://www.energy-generation.org/)
 - Quelques images du site:
-![image de la page d'accueil](./Energy_space_images/Capture1.png)
+![image de la page d'accueil](Energy_space_images/Capture1.png)
 
 - Durée du projet : **2 semaines**
 
